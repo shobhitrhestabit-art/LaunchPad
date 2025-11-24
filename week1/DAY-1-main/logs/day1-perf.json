@@ -1,0 +1,17 @@
+[
+  {
+    "method": "Buffer (fs.readFileSync)",
+    "file": "largefile.txt",
+    "executionTimeMs": "37.83",
+    "memoryUsedMB": "0.00",
+    "timestamp": "2025-11-09T20:07:23.348Z"
+  },
+  {
+    "method": "Stream (fs.createReadStream)",
+    "file": "largefile.txt",
+    "bytesRead": 62976000,
+    "executionTimeMs": "69.88",
+    "memoryUsedMB": "0.28",
+    "timestamp": "2025-11-09T20:15:15.335Z"
+  }
+]

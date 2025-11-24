@@ -1,0 +1,48 @@
+{
+  "totalWords": 200322,
+  "uniqueWords": 360,
+  "longestWord": "performance",
+  "shortestWord": "et",
+  "topWords": [
+    [
+      "incididunt",
+      5402
+    ],
+    [
+      "system",
+      5380
+    ],
+    [
+      "node",
+      5352
+    ],
+    [
+      "aliqua",
+      5347
+    ],
+    [
+      "magna",
+      5341
+    ],
+    [
+      "promise",
+      5339
+    ],
+    [
+      "await",
+      5325
+    ],
+    [
+      "elit",
+      5323
+    ],
+    [
+      "tempor",
+      5322
+    ],
+    [
+      "data",
+      5314
+    ]
+  ]
+}
