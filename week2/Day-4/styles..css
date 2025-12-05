@@ -1,0 +1,146 @@
+/* ===== Background ===== */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #87aec9;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* ===== Main Card ===== */
+.container {
+    width: 400px;
+    background: white;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+    border: 1px solid #f0f0f0;
+    transition: 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+}
+
+/* ===== Header ===== */
+.container h2 {
+    text-align: center;
+    margin-bottom: 22px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* ===== Input Fields ===== */
+#todoInput, #searchInput {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 14px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    background: #fafafa;
+    transition: all 0.2s;
+}
+
+#todoInput:focus,
+#searchInput:focus {
+    border-color: #1e90ff;
+    background: #fff;
+    box-shadow: 0 0 8px rgba(30,144,255,0.3);
+}
+
+/* ===== Buttons ===== */
+button {
+    width: 100%;
+    padding: 12px;
+    background: #1e90ff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    font-size: 16px;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #1473c4;
+}
+
+/* ===== Todo List Card Items ===== */
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+li {
+    background: #ffffff;
+    margin-bottom: 12px;
+    padding: 14px;
+    border-radius: 14px;
+    border: 1px solid #e5e5e5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    /* Card shadow */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+    transition: 0.25s ease;
+}
+
+li:hover {
+    transform: scale(1.02);
+}
+
+/* Completed task style */
+.completed {
+    text-decoration: line-through;
+    color: #8c8c8c;
+    opacity: 0.7;
+}
+
+/* ===== Action Buttons ===== */
+.actions {
+    display: flex;
+    gap: 8px;
+}
+
+.actions button {
+    width: 32px;
+    height: 32px;
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+/* Edit */
+.edit-btn {
+    background: #ffe08a;
+    color: #6e4d00;
+}
+
+.edit-btn:hover {
+    background: #ffd46b;
+}
+
+/* Delete */
+.delete-btn {
+    background: #ff6b6b;
+    color: white;
+}
+
+.delete-btn:hover {
+    background: #ff4c4c;
+}
+
+/* Clear All Button Style */
+#clearAll {
+    background: #444;
+}
+
+#clearAll:hover {
+    background: #222;
+}

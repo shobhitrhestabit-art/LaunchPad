@@ -1,0 +1,33 @@
+shobhitraj@hestabit-Latitude-3450:~/Day3git$ git bisect start
+status: waiting for both good and bad commits
+shobhitraj@hestabit-Latitude-3450:~/Day3git$ git bisect bad
+status: waiting for good commit(s), bad commit known
+shobhitraj@hestabit-Latitude-3450:~/Day3git$ git log --oneline
+3cb5311 (HEAD -> master) Commit 8: Final cleanup
+57351a1 Commit 7: Add config loader
+a935a25 Commit 6: Add UI enhancements
+498a78d Commit 5: Add logout module
+eb834b3 Commit 4: Introduce bug
+2e29cdf Commit 3: Add dashboard module
+8ac22c2 Commit 2: Add login module
+464166e Commit 1: Initialize app
+shobhitraj@hestabit-Latitude-3450:~/Day3git$ git bisect good 464166e
+Bisecting: 3 revisions left to test after this (roughly 2 steps)
+[eb834b3b92430242a8d352d52c1773063c168f39] Commit 4: Introduce bug
+shobhitraj@hestabit-Latitude-3450:~/Day3git$ git bisect bad
+Bisecting: 0 revisions left to test after this (roughly 1 step)
+[2e29cdf2c1dc7dd10da33e375e678faa90853447] Commit 3: Add dashboard module
+shobhitraj@hestabit-Latitude-3450:~/Day3git$ git bisect good
+eb834b3b92430242a8d352d52c1773063c168f39 is the first bad commit
+commit eb834b3b92430242a8d352d52c1773063c168f39
+Author: Shobhit Raj <shobhitr.hestabit@gmail.com>
+Date:   Thu Nov 20 12:29:52 2025 +0530
+
+    Commit 4: Introduce bug
+
+ app.txt | 1 +
+ 1 file changed, 1 insertion(+)
+shobhitraj@hestabit-Latitude-3450:~/Day3git$ git bisect reset
+Previous HEAD position was 2e29cdf Commit 3: Add dashboard module
+Switched to branch 'master'
+shobhitraj@hestabit-Latitude-3450:~/Day3git$ 

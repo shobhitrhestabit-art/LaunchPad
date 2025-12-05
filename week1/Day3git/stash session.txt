@@ -1,0 +1,33 @@
+stash-session
+
+shobhitraj@hestabit-Latitude-3450:~/Day3git$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        temp.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+shobhitraj@hestabit-Latitude-3450:~/Day3git$ git pull
+Already up to date.
+shobhitraj@hestabit-Latitude-3450:~/Day3git$ git stash
+No local changes to save
+shobhitraj@hestabit-Latitude-3450:~/Day3git$ pwd
+/home/shobhitraj/Day3git
+shobhitraj@hestabit-Latitude-3450:~/Day3git$ pwd
+/home/shobhitraj/Day3git
+shobhitraj@hestabit-Latitude-3450:~/Day3git$ git add temp.txt
+shobhitraj@hestabit-Latitude-3450:~/Day3git$ git stash
+Saved working directory and index state WIP on main: 4a71f90 Fix: Correct the buggy calculation
+shobhitraj@hestabit-Latitude-3450:~/Day3git$ git pull
+Already up to date.
+shobhitraj@hestabit-Latitude-3450:~/Day3git$ git stash apply
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   temp.txt
+
+shobhitraj@hestabit-Latitude-3450:~/Day3git$ 

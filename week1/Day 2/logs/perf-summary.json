@@ -1,0 +1,25 @@
+{
+  "timestamp": "2025-11-10T06:24:08.512Z",
+  "file": "corpus.txt",
+  "system": {
+    "cpuCores": 12,
+    "totalMemoryMB": 23718
+  },
+  "results": [
+    {
+      "chunkCount": 1,
+      "timeMs": "88.52",
+      "memoryMB": "1.88"
+    },
+    {
+      "chunkCount": 4,
+      "timeMs": "86.28",
+      "memoryMB": "-0.46"
+    },
+    {
+      "chunkCount": 8,
+      "timeMs": "89.35",
+      "memoryMB": "-0.41"
+    }
+  ]
+}
