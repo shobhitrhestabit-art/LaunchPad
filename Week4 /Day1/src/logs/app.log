@@ -1,0 +1,12 @@
+info: ✔ Middlewares loaded {"timestamp":"2025-11-26T18:16:45.187Z"}
+info: ✔ Database connected {"timestamp":"2025-11-26T18:16:51.213Z"}
+info: ✔ Routes mounted: 1 endpoints {"timestamp":"2025-11-26T18:16:51.214Z"}
+info: ✔ Server started on port 3000 {"timestamp":"2025-11-26T18:16:51.219Z"}
+info: ✔ Middlewares loaded {"timestamp":"2025-11-27T06:38:55.869Z"}
+error: ❌ Database connection failed {"timestamp":"2025-11-27T06:39:25.965Z"}
+info: ✔ Middlewares loaded {"timestamp":"2025-11-27T06:42:46.223Z"}
+error: ❌ Database connection failed {"timestamp":"2025-11-27T06:43:16.316Z"}
+info: ✔ Middlewares loaded {"timestamp":"2025-11-27T06:45:16.375Z"}
+info: ✔ Database connected {"timestamp":"2025-11-27T06:45:22.106Z"}
+info: ✔ Routes mounted: 1 endpoints {"timestamp":"2025-11-27T06:45:22.107Z"}
+info: ✔ Server started on port 3000 {"timestamp":"2025-11-27T06:45:22.111Z"}

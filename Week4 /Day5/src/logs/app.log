@@ -1,0 +1,107 @@
+info: ✔ Middlewares loaded {"timestamp":"2025-11-26T18:16:45.187Z"}
+info: ✔ Database connected {"timestamp":"2025-11-26T18:16:51.213Z"}
+info: ✔ Routes mounted: 1 endpoints {"timestamp":"2025-11-26T18:16:51.214Z"}
+info: ✔ Server started on port 3000 {"timestamp":"2025-11-26T18:16:51.219Z"}
+info: ✔ Middlewares loaded {"timestamp":"2025-11-26T18:34:22.073Z"}
+info: ✔ Database connected {"timestamp":"2025-11-26T18:34:22.806Z"}
+info: ✔ Routes mounted: 1 endpoints {"timestamp":"2025-11-26T18:34:22.807Z"}
+info: ✔ Server started on port 3000 {"timestamp":"2025-11-26T18:34:22.810Z"}
+info: ✔ Middlewares loaded {"timestamp":"2025-11-27T06:37:16.092Z"}
+error: ❌ Database connection failed {"timestamp":"2025-11-27T06:37:46.215Z"}
+info: ✔ Middlewares loaded {"timestamp":"2025-11-27T06:37:58.761Z"}
+error: ❌ Database connection failed {"timestamp":"2025-11-27T06:38:28.876Z"}
+info: ✔ Middlewares loaded {"timestamp":"2025-11-27T06:50:03.610Z"}
+info: ✔ Database connected {"timestamp":"2025-11-27T06:50:04.303Z"}
+info: ✔ Routes mounted: 1 endpoints {"timestamp":"2025-11-27T06:50:04.306Z"}
+info: ✔ Server started on port 3000 {"timestamp":"2025-11-27T06:50:04.312Z"}
+info: ✔ Middlewares loaded {"timestamp":"2025-11-27T10:25:40.260Z"}
+error: ❌ Database connection failed {"timestamp":"2025-11-27T10:25:42.039Z"}
+info: ✔ Middlewares loaded {"timestamp":"2025-11-27T10:29:09.571Z"}
+error: ❌ Database connection failed {"timestamp":"2025-11-27T10:29:11.266Z"}
+info: ✔ Middlewares loaded {"timestamp":"2025-11-27T10:38:14.199Z"}
+info: ✔ Database connected {"timestamp":"2025-11-27T10:38:20.732Z"}
+info: ✔ Routes mounted: 1 endpoints {"timestamp":"2025-11-27T10:38:20.733Z"}
+info: ✔ Server started on port 3000 {"timestamp":"2025-11-27T10:38:20.737Z"}
+info: ✔ Middlewares loaded {"timestamp":"2025-11-27T10:46:43.390Z"}
+info: ✔ Database connected {"timestamp":"2025-11-27T10:46:45.810Z"}
+info: ✔ Routes mounted: 1 endpoints {"timestamp":"2025-11-27T10:46:45.811Z"}
+info: ✔ Server started on port 3000 {"timestamp":"2025-11-27T10:46:45.816Z"}
+info: ✔ Middlewares loaded {"timestamp":"2025-11-27T12:32:17.382Z"}
+info: ✔ Database connected {"timestamp":"2025-11-27T12:32:18.071Z"}
+info: ✔ Routes mounted: 1 endpoints {"timestamp":"2025-11-27T12:32:18.071Z"}
+info: ✔ Server started on port 3000 {"timestamp":"2025-11-27T12:32:18.076Z"}
+info: ✔ Middlewares loaded {"timestamp":"2025-11-28T07:26:32.010Z"}
+info: ✔ Database connected {"timestamp":"2025-11-28T07:26:35.055Z"}
+info: ✔ Routes mounted: 1 endpoints {"timestamp":"2025-11-28T07:26:35.056Z"}
+info: ✔ Server started on port 3000 {"timestamp":"2025-11-28T07:26:35.060Z"}
+info: ✔ Middlewares loaded {"timestamp":"2025-11-30T10:16:40.129Z"}
+info: ✔ Database connected {"timestamp":"2025-11-30T10:16:40.889Z"}
+info: ✔ Routes mounted: 1 endpoints {"timestamp":"2025-11-30T10:16:40.890Z"}
+info: ✔ Server started on port 3000 {"timestamp":"2025-11-30T10:16:40.896Z"}
+info: ✔ Middlewares loaded {"timestamp":"2025-11-30T10:57:18.060Z"}
+error: ❌ Database connection failed {"timestamp":"2025-11-30T10:57:48.220Z"}
+info: ✔ Middlewares loaded {"timestamp":"2025-11-30T11:09:49.410Z"}
+error: ❌ Database connection failed {"timestamp":"2025-11-30T11:10:19.514Z"}
+info: ✔ Middlewares loaded {"timestamp":"2025-11-30T11:13:43.221Z"}
+error: ❌ Database connection failed {"timestamp":"2025-11-30T11:14:13.352Z"}
+info: ✔ Middlewares loaded {"timestamp":"2025-11-30T11:14:53.401Z"}
+error: ❌ Database connection failed {"timestamp":"2025-11-30T11:15:23.519Z"}
+info: ✔ Middlewares loaded {"timestamp":"2025-11-30T11:18:32.957Z"}
+error: ❌ Database connection failed {"timestamp":"2025-11-30T11:19:03.053Z"}
+info: ✔ Middlewares loaded {"timestamp":"2025-11-30T11:20:22.251Z"}
+error: ❌ Database connection failed {"timestamp":"2025-11-30T11:20:37.336Z"}
+info: ✔ Routes mounted: 1 endpoints {"timestamp":"2025-11-30T11:20:37.341Z"}
+info: ✔ Server started on port 3000 {"timestamp":"2025-11-30T11:20:37.344Z"}
+info: ✔ Middlewares loaded {"timestamp":"2025-11-30T11:22:29.670Z"}
+error: ❌ Database connection failed {"timestamp":"2025-11-30T11:22:44.744Z"}
+info: ✔ Routes mounted: 1 endpoints {"timestamp":"2025-11-30T11:22:44.749Z"}
+info: ✔ Server started on port 3000 {"timestamp":"2025-11-30T11:22:44.752Z"}
+info: ✔ Middlewares loaded {"timestamp":"2025-11-30T11:24:49.734Z"}
+info: ✔ Database connected {"timestamp":"2025-11-30T11:24:50.347Z"}
+info: ✔ Routes mounted: 1 endpoints {"timestamp":"2025-11-30T11:24:50.348Z"}
+info: ✔ Server started on port 3000 {"timestamp":"2025-11-30T11:24:50.352Z"}
+info: ✔ Middlewares loaded {"timestamp":"2025-11-30T16:04:32.443Z"}
+info: ✔ Database connected {"timestamp":"2025-11-30T16:04:33.741Z"}
+info: ✔ Routes mounted: 1 endpoints {"timestamp":"2025-11-30T16:04:33.741Z"}
+info: ✔ Server started on port 3000 {"timestamp":"2025-11-30T16:04:33.746Z"}
+info: ✔ Middlewares loaded {"timestamp":"2025-11-30T17:01:16.143Z"}
+info: ✔ Database connected {"timestamp":"2025-11-30T17:01:16.916Z"}
+info: ✔ Middlewares loaded {"timestamp":"2025-11-30T17:13:50.239Z"}
+info: ✔ Database connected {"timestamp":"2025-11-30T17:13:51.131Z"}
+info: ✔ Database connected {"timestamp":"2025-11-30T17:17:21.277Z"}
+info: ✔ Server started on port 3000 {"timestamp":"2025-11-30T17:17:21.284Z"}
+info: ✔ Database connected {"timestamp":"2025-11-30T17:34:46.933Z"}
+info: ✔ Server started on port 3000 {"timestamp":"2025-11-30T17:34:46.942Z"}
+info: ✔ Database connected {"timestamp":"2025-11-30T17:46:06.140Z"}
+info: ✔ Server started on port 3000 {"timestamp":"2025-11-30T17:46:06.148Z"}
+info: ✔ Database connected {"timestamp":"2025-12-01T11:21:58.872Z"}
+info: ✔ Server started on port 3000 {"timestamp":"2025-12-01T11:21:58.880Z"}
+info: ✔ Database connected {"timestamp":"2025-12-01T12:21:39.905Z"}
+info: ✔ Server started on port 3000 {"timestamp":"2025-12-01T12:21:39.912Z"}
+info: ✔ Database connected {"timestamp":"2025-12-01T19:21:07.854Z"}
+info: ✔ Server started on port 3000 {"timestamp":"2025-12-01T19:21:07.861Z"}
+error: ❌ Database connection failed {"timestamp":"2025-12-02T18:37:12.764Z"}
+info: ✔ Server started on port undefined {"timestamp":"2025-12-02T18:37:12.771Z"}
+error: ❌ Database connection failed {"timestamp":"2025-12-02T18:39:43.049Z"}
+info: ✔ Server started on port undefined {"timestamp":"2025-12-02T18:39:43.056Z"}
+error: ❌ Database connection failed {"timestamp":"2025-12-02T18:43:09.603Z"}
+info: ✔ Server started on port undefined {"timestamp":"2025-12-02T18:43:09.612Z"}
+info: ✔ Database connected {"timestamp":"2025-12-02T18:43:27.378Z"}
+info: ✔ Server started on port 3000 {"timestamp":"2025-12-02T18:43:27.385Z"}
+info: ✔ Database connected {"timestamp":"2025-12-02T19:19:38.799Z"}
+info: ✔ Server started on port 3000 {"timestamp":"2025-12-02T19:19:38.806Z"}
+error: Cannot destructure property 'to' of 'undefined' as it is undefined. - POST /api/email/send {"timestamp":"2025-12-02T19:23:07.573Z"}
+info: ✔ Database connected {"timestamp":"2025-12-03T05:57:19.103Z"}
+info: ✔ Server started on port 3000 {"timestamp":"2025-12-03T05:57:19.111Z"}
+error: Cannot read properties of undefined (reading 'to') - POST /api/email/send {"timestamp":"2025-12-03T06:01:50.299Z"}
+info: ✔ Database connected {"timestamp":"2025-12-03T06:04:31.559Z"}
+info: ✔ Server started on port 3000 {"timestamp":"2025-12-03T06:04:31.566Z"}
+error: Cannot read properties of undefined (reading 'map') - POST /api/users {"timestamp":"2025-12-03T06:44:53.265Z"}
+error: User not found - GET /api/users/%7B%7BUSER_ID%7D%7D {"timestamp":"2025-12-03T06:46:25.375Z"}
+error: User not found - DELETE /api/users/%7B%7BUSER_ID%7D%7D {"timestamp":"2025-12-03T06:49:47.539Z"}
+info: ✔ Database connected {"timestamp":"2025-12-03T06:58:33.803Z"}
+info: ✔ Server started on port 3000 {"timestamp":"2025-12-03T06:58:33.812Z"}
+error: ❌ Database connection failed {"timestamp":"2025-12-03T07:45:01.550Z"}
+info: ✔ Server started on port 3000 {"timestamp":"2025-12-03T07:45:01.555Z"}
+error: ❌ Database connection failed {"timestamp":"2025-12-03T07:45:12.762Z"}
+info: ✔ Server started on port 3000 {"timestamp":"2025-12-03T07:45:12.767Z"}
