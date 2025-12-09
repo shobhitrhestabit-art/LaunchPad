@@ -1,0 +1,18 @@
+services:
+  app:
+    build: ./app
+    container_name: day4-app
+    expose:
+      - "3000"
+
+  nginx:
+    image: nginx:latest
+    container_name: day4-nginx
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+      - ./nginx/certs:/etc/nginx/certs
+    depends_on:
+      - app
