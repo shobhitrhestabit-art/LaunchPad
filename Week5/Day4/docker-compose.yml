@@ -1,13 +1,13 @@
 services:
   app:
     build: ./app
-    container_name: day4-app
+    container_name: app
     expose:
       - "3000"
 
   nginx:
     image: nginx:latest
-    container_name: day4-nginx
+    container_name: nginx
     ports:
       - "80:80"
       - "443:443"
