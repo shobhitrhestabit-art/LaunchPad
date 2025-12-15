@@ -1,1 +1,4 @@
 node_modules/
+
+nginx/certs/*.pem
+nginx/certs/*-key.pem
