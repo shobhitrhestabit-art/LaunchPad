@@ -1,6 +1,6 @@
-# 🚀 Day 5 — CI-Style Deployment Automation (Capstone)
+# Day 5 — CI-Style Deployment Automation (Capstone)
 
-## 📌 Project Overview
+##  Project Overview
 This project demonstrates a **production-style full-stack application deployment** using **Docker, Docker Compose, NGINX (reverse proxy), HTTPS, and MongoDB**.
 
 A **single domain** (`mysite.local`) is managed by **NGINX**, which:
@@ -12,7 +12,7 @@ The setup follows **real-world production practices** such as containerization, 
 
 ---
 
-## 🧱 Tech Stack
+## Tech Stack
 
 | Layer | Technology |
 |-----|-----------|
@@ -25,7 +25,7 @@ HTTPS / TLS | mkcert (local trusted CA) |
 
 ---
 
-## 🌐 Architecture (Single Domain)
+## Architecture (Single Domain)
 
 Browser (https://mysite.local
 )
@@ -46,7 +46,7 @@ MongoDB (Docker)
 
 ---
 
-## 🔐 HTTPS Setup (Local)
+## HTTPS Setup (Local)
 
 - Domain used: `mysite.local`
 - HTTPS certificates generated using **mkcert**
@@ -55,7 +55,7 @@ MongoDB (Docker)
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 Day5/
 ├── docker-compose.prod.yml
@@ -79,7 +79,7 @@ Day5/
 
 ---
 
-## ⚙️ Environment Variables
+## Environment Variables
 
 ### `.env` (not committed)
 ```env
@@ -108,7 +108,7 @@ chmod +x deploy.sh
 
 
 
-## 📸 Screenshots (Add These for Submission)
+##  Screenshots (Add These for Submission)
 
 ### 1️ Frontend UI (HTTPS Proof)
 
@@ -116,7 +116,7 @@ chmod +x deploy.sh
 https://mysite.local
 
 **Show:**  
-- Secure lock (🔒) in the browser  
+- Secure lock () in the browser  
 - Todo UI with at least one item  
 
 **Screenshot:**  
