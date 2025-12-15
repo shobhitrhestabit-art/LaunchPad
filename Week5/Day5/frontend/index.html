@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Todo App</title>
+</head>
+<body>
+  <h1>Todos</h1>
+  <input id="todo" />
+  <button onclick="addTodo()">Add</button>
+  <ul id="list"></ul>
+
+<script>
+async function load() {
+  const res = await fetch("/api/todos");
+  const todos = await res.json();
+  document.getElementById("list").innerHTML =
+    todos.map(t => `<li>${t.text}
+      <button onclick="del('${t._id}')">X</button></li>`).join("");
+}
+
+async function addTodo() {
+  await fetch("/api/todos", {
+    method: "POST",
+    headers: {"Content-Type":"application/json"},
+    body: JSON.stringify({ text: todo.value })
+  });
+  load();
+}
+
+async function del(id) {
+  await fetch("/api/todos/" + id, { method: "DELETE" });
+  load();
+}
+
+load();
+</script>
+</body>
+</html>
