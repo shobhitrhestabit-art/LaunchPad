@@ -1,0 +1,17 @@
+{
+  "0":"drug_name_Ibuprofen",
+  "1":"drug_name_Aspirin",
+  "2":"drug_name_Paracetamol",
+  "3":"drug_name_Tobramycin",
+  "4":"drug_name_Vancomycin",
+  "5":"drug_name_Cisplatin",
+  "6":"drug_name_Gentamicin",
+  "7":"creatinine_urea_ratio",
+  "8":"hbond_acceptors",
+  "9":"half_life_hr",
+  "10":"albumin",
+  "11":"blood_urea",
+  "12":"hypertension",
+  "13":"bioavailability_pct",
+  "14":"blood_glucose_random"
+}
