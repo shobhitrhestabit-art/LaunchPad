@@ -4,9 +4,7 @@ from pathlib import Path
 from scipy.stats import ks_2samp
 import json
 
-# --------------------------------------------------
-# Resolve project root
-# --------------------------------------------------
+
 def get_project_root():
     path = Path(__file__).resolve()
     for parent in path.parents:
@@ -16,37 +14,29 @@ def get_project_root():
 
 BASE_DIR = get_project_root()
 
-# --------------------------------------------------
-# Paths
-# --------------------------------------------------
+
 TRAIN_DATA_PATH = BASE_DIR / "Day2" / "src" / "data" / "processed" / "X_train.csv"
 PREDICTION_LOG_PATH = BASE_DIR / "Day5" / "prediction_logs.csv"
 OUTPUT_PATH = BASE_DIR / "Day5" / "monitoring" / "drift_report.json"
 
-# --------------------------------------------------
-# Parameters
-# --------------------------------------------------
-DRIFT_THRESHOLD_PVALUE = 0.05  # KS-test threshold
 
-# --------------------------------------------------
-# Load datasets
-# --------------------------------------------------
+DRIFT_THRESHOLD_PVALUE = 0.05  
+
+
 def load_data():
     train_df = pd.read_csv(TRAIN_DATA_PATH)
     live_df = pd.read_csv(PREDICTION_LOG_PATH)
 
-    # Remove non-feature columns from logs
+    
     drop_cols = ["request_id", "timestamp", "prediction", "probability", "model_version"]
     live_df = live_df.drop(columns=[c for c in drop_cols if c in live_df.columns])
 
-    # Align columns
+    #
     common_cols = train_df.columns.intersection(live_df.columns)
 
     return train_df[common_cols], live_df[common_cols]
 
-# --------------------------------------------------
-# Drift detection
-# --------------------------------------------------
+
 def detect_drift(train_df, live_df):
     drift_results = {}
 
@@ -54,7 +44,7 @@ def detect_drift(train_df, live_df):
         train_values = train_df[col].dropna()
         live_values = live_df[col].dropna()
 
-        # Skip if insufficient data
+        
         if len(live_values) < 20:
             drift_results[col] = {
                 "status": "insufficient_data"
@@ -70,9 +60,7 @@ def detect_drift(train_df, live_df):
 
     return drift_results
 
-# --------------------------------------------------
-# Main
-# --------------------------------------------------
+
 def main():
     print("🔍 Running data drift detection...")
 

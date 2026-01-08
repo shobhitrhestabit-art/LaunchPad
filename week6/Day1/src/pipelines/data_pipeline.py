@@ -1,27 +1,21 @@
 import pandas as pd
 from pathlib import Path
 
-# =========================
-# Paths
-# =========================
+
 BASE_DIR = Path(__file__).resolve().parents[1]
 
 RAW_DATA_PATH = BASE_DIR / "data" / "raw" / "raw.csv"
 PROCESSED_DATA_PATH = BASE_DIR / "data" / "processed" / "final.csv"
 
 
-# =========================
-# Step 1: Load data
-# =========================
+
 def load_data():
     print("Loading raw data...")
     df = pd.read_csv(RAW_DATA_PATH)
     return df
 
 
-# =========================
-# Step 2: Normalize columns
-# =========================
+
 def normalize_columns(df):
     df.columns = (
         df.columns
@@ -31,7 +25,7 @@ def normalize_columns(df):
         .str.replace(r"[^\w]", "", regex=True)
     )
     return df
-# datatype  correction 
+
 
 def fix_dtypes(df):
     categorical_cols = [
@@ -46,9 +40,7 @@ def fix_dtypes(df):
     return df
 
 
-# =========================
-# Step 3: Handle missing values
-# =========================
+
 def handle_missing(df):
     print("Handling missing values...")
 
@@ -64,17 +56,13 @@ def handle_missing(df):
     return df
 
 
-# =========================
-# Step 4: Remove duplicates
-# =========================
+
 def remove_duplicates(df):
     print("Removing duplicates...")
     return df.drop_duplicates()
 
 
-# =========================
-# Step 5: Handle outliers (IQR)
-# =========================
+
 def remove_outliers(df):
     print("Removing outliers using IQR...")
     numeric_cols = df.select_dtypes(include=["int64", "float64"]).columns
@@ -89,9 +77,7 @@ def remove_outliers(df):
     return df
 
 
-# =========================
-# Main pipeline
-# =========================
+
 def run_pipeline():
     df = load_data()
     df = normalize_columns(df)

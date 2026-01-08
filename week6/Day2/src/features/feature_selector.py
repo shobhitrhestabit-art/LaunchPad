@@ -5,9 +5,7 @@ from sklearn.feature_selection import mutual_info_classif, RFE
 from sklearn.linear_model import LogisticRegression
 
 
-# -----------------------------
-# Resolve project root safely
-# -----------------------------
+
 BASE_DIR = Path(__file__).resolve().parents[3]
 
 DATA_DIR = BASE_DIR / "Day2" / "src" / "data" / "processed"
@@ -52,13 +50,13 @@ def rfe_filter(X, y, n_features=15):
 def main():
     X, y = load_data()
 
-    # Step 1: Correlation filtering
+    
     X_corr, dropped = correlation_filter(X)
 
-    # Step 2: Mutual Information
+  
     top_mi, mi_scores = mutual_information_filter(X_corr, y)
 
-    # Step 3: RFE
+   
     final_features = rfe_filter(X_corr[top_mi.index], y)
 
     FEATURES_DIR.mkdir(parents=True, exist_ok=True)
