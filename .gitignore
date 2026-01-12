@@ -4,3 +4,8 @@ nginx/certs/*.pem
 nginx/certs/*-key.pem
 
 venv/
+venv/
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
