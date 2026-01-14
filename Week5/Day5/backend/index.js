@@ -13,12 +13,12 @@ const TodoSchema = new mongoose.Schema({
 });
 const Todo = mongoose.model("Todo", TodoSchema);
 
-// Health check
+
 app.get("/health", (req, res) => {
   res.status(200).send("OK");
 });
 
-// APIs
+
 app.get("/api/todos", async (req, res) => {
   res.json(await Todo.find());
 });

@@ -5,7 +5,7 @@ It also includes screenshots and notes about browser certificate trust issues.
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 
 Day4/
