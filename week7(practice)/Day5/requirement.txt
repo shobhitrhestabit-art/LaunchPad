@@ -1,0 +1,10 @@
+pymupdf
+pytesseract
+pillow 
+sha256
+tqdm
+fastapi 
+uvicorn
+redis
+streamlt 
+request 
