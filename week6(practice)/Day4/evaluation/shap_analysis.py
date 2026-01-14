@@ -6,9 +6,7 @@ import pandas as pd
 from pathlib import Path
 import matplotlib.pyplot as plt
 
-# --------------------------------------------------
-# Resolve project root robustly
-# --------------------------------------------------
+
 def get_project_root():
     path = Path(__file__).resolve()
     for parent in path.parents:
@@ -25,9 +23,7 @@ MODEL_PATH = BASE_DIR / "Day3" / "models" / "best_model.pkl"
 OUTPUT_DIR = BASE_DIR / "Day4" / "evaluation"
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
-# --------------------------------------------------
-# Load data & model
-# --------------------------------------------------
+
 def load_assets():
     X = pd.read_csv(DATA_DIR / "X_train.csv")
 
@@ -40,33 +36,27 @@ def load_assets():
     return X, model
 
 
-# --------------------------------------------------
-# SHAP analysis
-# --------------------------------------------------
+
 def run_shap():
     X, model = load_assets()
-    print("🔍 Computing SHAP values...")
+    print("Computing SHAP values...")
 
-    # -----------------------------
-    # Choose correct SHAP explainer
-    # -----------------------------
+    
     if hasattr(model, "coef_"):
-        # Linear models (Logistic Regression)
+        
         masker = shap.maskers.Independent(X)
         explainer = shap.LinearExplainer(model, masker)
         shap_values = explainer.shap_values(X)
     else:
-        # Tree-based models
+      
         explainer = shap.TreeExplainer(model)
         shap_values = explainer.shap_values(X)
 
-    # For binary classification
+   
     if isinstance(shap_values, list):
         shap_values = shap_values[1]
 
-    # --------------------------------------------------
-    # SHAP summary plot
-    # --------------------------------------------------
+   
     plt.figure()
     shap.summary_plot(
         shap_values,
@@ -77,9 +67,7 @@ def run_shap():
     plt.savefig(OUTPUT_DIR / "shap_summary.png")
     plt.close()
 
-    # --------------------------------------------------
-    # Feature importance (mean |SHAP|)
-    # --------------------------------------------------
+  
     importance = np.abs(shap_values).mean(axis=0)
     importance_df = pd.DataFrame({
         "feature": X.columns,

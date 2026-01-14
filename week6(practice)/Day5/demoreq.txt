@@ -1,0 +1,21 @@
+{
+  "features": {
+    "half_life_hr": 4.5,
+    "bioavailability_pct": 80,
+    "hbond_acceptors": 3,
+
+    "albumin": 3.8,
+    "blood_urea": 42,
+    "creatinine_urea_ratio": 0.18,
+    "blood_glucose_random": 140,
+    "hypertension": 1,
+
+    "drug_name_Aspirin": 0,
+    "drug_name_Paracetamol": 1,
+    "drug_name_Ibuprofen": 0,
+    "drug_name_Cisplatin": 0,
+    "drug_name_Gentamicin": 0,
+    "drug_name_Tobramycin": 0,
+    "drug_name_Vancomycin": 0
+  }
+}

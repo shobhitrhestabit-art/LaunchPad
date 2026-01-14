@@ -9,9 +9,7 @@ from sklearn.model_selection import StratifiedKFold, cross_val_score
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import roc_auc_score
 
-# --------------------------------------------------
-# Paths
-# --------------------------------------------------
+
 def get_project_root():
     path = Path(__file__).resolve()
     for parent in path.parents:
@@ -29,9 +27,7 @@ RESULTS_PATH = BASE_DIR / "Day4" / "tuning" / "results.json"
 
 RESULTS_PATH.parent.mkdir(parents=True, exist_ok=True)
 
-# --------------------------------------------------
-# Load data
-# --------------------------------------------------
+
 def load_data():
     X = pd.read_csv(DATA_DIR / "X_train.csv")
     y = pd.read_csv(DATA_DIR / "y_train.csv").squeeze()
@@ -42,9 +38,6 @@ def load_data():
     return X[features], y
 
 
-# --------------------------------------------------
-# Optuna objective
-# --------------------------------------------------
 def objective(trial):
     params = {
         "n_estimators": trial.suggest_int("n_estimators", 100, 500),
@@ -73,14 +66,12 @@ def objective(trial):
     return scores.mean()
 
 
-# --------------------------------------------------
-# Main tuning flow
-# --------------------------------------------------
+
 def main():
     global X_train, y_train
     X_train, y_train = load_data()
 
-    print("🔍 Starting hyperparameter tuning with Optuna...\n")
+    print(" Starting hyperparameter tuning with Optuna...\n")
 
     study = optuna.create_study(direction="maximize")
     study.optimize(objective, n_trials=30)
@@ -90,9 +81,7 @@ def main():
     best_params = study.best_params
     best_score = study.best_value
 
-    # --------------------------------------------------
-    # Load baseline model for comparison
-    # --------------------------------------------------
+   
     baseline_model = joblib.load(MODEL_PATH)
 
     cv = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)
@@ -106,9 +95,7 @@ def main():
 
     baseline_score = baseline_scores.mean()
 
-    # --------------------------------------------------
-    # Save results
-    # --------------------------------------------------
+    
     results = {
         "baseline_roc_auc": baseline_score,
         "tuned_roc_auc": best_score,

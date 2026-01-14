@@ -4,9 +4,6 @@ from pathlib import Path
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 
-# -----------------------------
-# Paths
-# -----------------------------
 BASE_DIR = Path(__file__).resolve().parents[3]
 
 DATA_PATH = BASE_DIR / "Day1" / "src" / "data" / "processed" / "final.csv"
@@ -29,28 +26,28 @@ def encode_categorical(df):
 
 
 def generate_features(df):
-    eps = 1e-6  # small constant to avoid division by zero
+    eps = 1e-6  
 
-    # ---- Clinical ratios ----
+  
     df["bp_ratio"] = df["bp_systolic"] / (df["bp_diastolic"] + eps)
     df["creatinine_urea_ratio"] = df["serum_creatinine"] / (df["blood_urea"] + eps)
 
-    # ---- Drug exposure features ----
+    
     df["drug_exposure_intensity"] = df["drug_dosage_mg"] * df["exposure_days"]
     df["binding_adjusted_dose"] = (
         df["drug_dosage_mg"] * (1 - df["protein_binding_pct"] / 100)
     )
 
-    # ---- Toxicity aggregation ----
+    
     df["toxicity_load"] = df["mitochondrial_damage"] + df["oxidative_stress"]
 
-    # ---- Pharmacokinetic features ----
+    
     df["pk_risk_score"] = df["half_life_hr"] / (df["clearance_rate"] + eps)
     df["bioavailability_clearance_ratio"] = (
         df["bioavailability_pct"] / (df["clearance_rate"] + eps)
     )
 
-    # ---- Kidney stress indicators ----
+   
     df["renal_stress_index"] = (
         df["serum_creatinine_change_pct"] +
         df["kidney_cell_viability_pct"]
@@ -64,10 +61,10 @@ def split_and_scale(df):
 
     y = df[TARGET]
 
-    # Convert everything to float (critical step)
+  
     X = X.astype(float)
 
-    # Replace invalid values
+    
     X = X.replace([np.inf, -np.inf], np.nan)
     X = X.fillna(0)
 

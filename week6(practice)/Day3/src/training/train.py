@@ -18,7 +18,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.neural_network import MLPClassifier
 
-# If XGBoost is installed
+
 try:
     from xgboost import XGBClassifier
     XGB_AVAILABLE = True
@@ -27,9 +27,7 @@ except ImportError:
 
 import matplotlib.pyplot as plt
 
-# --------------------------------------------------
-# Paths
-# --------------------------------------------------
+
 BASE_DIR = Path(__file__).resolve().parents[3]
 
 DATA_DIR = BASE_DIR / "Day2" / "src" / "data" / "processed"
@@ -41,9 +39,7 @@ EVAL_DIR = BASE_DIR / "Day3" / "evaluation"
 MODELS_DIR.mkdir(parents=True, exist_ok=True)
 EVAL_DIR.mkdir(parents=True, exist_ok=True)
 
-# --------------------------------------------------
-# Load data
-# --------------------------------------------------
+
 def load_data():
     X_train = pd.read_csv(DATA_DIR / "X_train.csv")
     X_test = pd.read_csv(DATA_DIR / "X_test.csv")
@@ -56,9 +52,6 @@ def load_data():
     return X_train[feature_list], X_test[feature_list], y_train, y_test
 
 
-# --------------------------------------------------
-# Define models
-# --------------------------------------------------
 def get_models():
     models = {
         "LogisticRegression": LogisticRegression(
@@ -92,9 +85,7 @@ def get_models():
     return models
 
 
-# --------------------------------------------------
-# Cross-validation evaluation
-# --------------------------------------------------
+
 def evaluate_model(model, X, y):
     cv = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)
 
@@ -118,9 +109,6 @@ def evaluate_model(model, X, y):
     return {metric: scores[f"test_{metric}"].mean() for metric in scoring}
 
 
-# --------------------------------------------------
-# Train, compare, select best model
-# --------------------------------------------------
 def main():
     X_train, X_test, y_train, y_test = load_data()
     models = get_models()
@@ -136,25 +124,21 @@ def main():
         metrics = evaluate_model(model, X_train, y_train)
         results[name] = metrics
 
-        # Select best model using ROC-AUC
+        
         if metrics["roc_auc"] > best_score:
             best_score = metrics["roc_auc"]
             best_model = model
             best_model_name = name
 
-    print(f"\n✅ Best model: {best_model_name}")
+    print(f"\n Best model: {best_model_name}")
 
-    # --------------------------------------------------
-    # Train best model on full training data
-    # --------------------------------------------------
+   
     best_model.fit(X_train, y_train)
 
-    # Save model
+    
     joblib.dump(best_model, MODELS_DIR / "best_model.pkl")
 
-    # --------------------------------------------------
-    # Final evaluation on test set
-    # --------------------------------------------------
+   
     y_pred = best_model.predict(X_test)
     y_prob = best_model.predict_proba(X_test)[:, 1]
 
@@ -171,13 +155,11 @@ def main():
         **test_metrics
     }
 
-    # Save metrics
+    
     with open(EVAL_DIR / "metrics.json", "w") as f:
         json.dump(results, f, indent=4)
 
-    # --------------------------------------------------
-    # Confusion matrix
-    # --------------------------------------------------
+   
     cm = confusion_matrix(y_test, y_pred)
     disp = ConfusionMatrixDisplay(cm)
     disp.plot()

@@ -17,7 +17,7 @@ WORKDIR /app
 # -----------------------------
 # Install dependencies
 # -----------------------------
-COPY Day5/deployment/requirements.txt .
+COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # -----------------------------
