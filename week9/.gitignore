@@ -1,0 +1,234 @@
+venv
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+ENV/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project Specific
+data/*.db
+data/test_*
+data/temp_*
+*.log
+
+# Keep sample data
+!data/sales.csv
+!data/sample.db
+
+# OS / Shell
+.bash*
+.zsh*
+.cache/
+.local/
+.config/
+
+# Python
+__pycache__/
+venv/
+.env
+
+# Editors
+.vscode/
+
+# Logs & temp
+*.log
+*.tmp
+
+
+# OS / Shell
+.bash*
+.zsh*
+.cache/
+.local/
+.config/
+
+# Python
+__pycache__/
+venv/
+.env
+
+# Editors
+.vscode/
+
+# Logs & temp
+*.log
+*.tmp
+
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# System files
+.bash_history
+.bash_history-*.tmp
+.cache/
+.docker/
+.local/
+.config/
+
+# Logs
+*.log
+nexus_ai.log
+
+# Memory/Storage
+memory/storage/
+*.db
+*.sqlite
+
+# Temporary files
+.tmp/
+tmp/
+*.tmp
+*.bak
+
+# OS
+.DS_Store
+Thumbs.db
+.env.local
+
+# Project specific
+.venv
+*.pid
+session_memory.pkl
+
+# Only track source code and docs
+!.gitkeep
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# System files
+.bash_history
+.bash_history-*.tmp
+.cache/
+.docker/
+.local/
+.config/
+
+# Logs
+*.log
+nexus_ai.log
+
+# Memory/Storage
+memory/storage/
+*.db
+*.sqlite
+
+# Temporary files
+.tmp/
+tmp/
+*.tmp
+*.bak
+
+# OS
+.DS_Store
+Thumbs.db
+.env.local
+
+# Project specific
+.venv
+*.pid
+session_memory.pkl
+
+# Only track source code and docs
+!.gitkeep

@@ -1,34 +1,22 @@
-# config.py - IMPROVED VERSION
 
-# ==============================
-# Model Configuration
-# ==============================
-
-# Path to quantised GGUF model
 MODEL_PATH = "../models/model-q4_0.gguf"
 
 # Context window (tokens)
 CONTEXT_LENGTH = 2048
 
-# Number of GPU layers to offload
-# Set to 0 for CPU-only
-# Typical values:
-#   CPU-only  → 0
-#   T4 / P100 → 20–40
+
 N_GPU_LAYERS = 35
 
 
-# ==============================
-# Generation Defaults (IMPROVED)
-# ==============================
+
 
 # For general prompts - balanced quality and speed
 DEFAULT_MAX_TOKENS = 256
-DEFAULT_TEMPERATURE = 0.6  # Reduced from 0.7 for more coherent output
-DEFAULT_TOP_K = 35  # Reduced from 40 for focused sampling
-DEFAULT_TOP_P = 0.85  # Reduced from 0.9 for more deterministic output
+DEFAULT_TEMPERATURE = 0.6  
+DEFAULT_TOP_K = 35  
+DEFAULT_TOP_P = 0.85  
 
-# Alternative presets for different use cases
+
 GENERATION_PRESETS = {
     "precise": {
         "temperature": 0.3,
@@ -57,17 +45,12 @@ GENERATION_PRESETS = {
 }
 
 
-# ==============================
-# API Server Configuration
-# ==============================
+
 
 HOST = "0.0.0.0"
 PORT = 8000
 
 
-# ==============================
-# System Prompt (Health Domain) - IMPROVED
-# ==============================
 
 SYSTEM_PROMPT = (
     "You are a knowledgeable health and medical information assistant. "

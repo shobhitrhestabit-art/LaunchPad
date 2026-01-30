@@ -3,9 +3,8 @@
 from llama_cpp import Llama
 from config import MODEL_PATH, CONTEXT_LENGTH, N_GPU_LAYERS
 
-# ------------------------------
-# Internal cached model instance
-# ------------------------------
+
+
 _llm = None
 
 
